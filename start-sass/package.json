@@ -1,0 +1,20 @@
+{
+  "name": "start-sass",
+  "version": "1.0.0",
+  "description": "This is a simple sass project",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ADABz-C/N315"
+  },
+  "license": "ISC",
+  "author": "ADABz-C",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "serve": "live-server",
+    "compile:sass": "sass scss/styles.scss css/styles.css -w --no-source-map"
+  },
+  "devDependencies": {
+    "sass": "^1.103.1"
+  }
+}
