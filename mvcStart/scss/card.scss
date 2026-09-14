@@ -1,0 +1,35 @@
+.card{
+    width: 300px;
+    padding: 20px;
+    background-color: grey;
+
+    &__image{
+        width: 100px;
+    }
+
+    &__title{
+        font-size: 25px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    &__text{
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+
+    &__button{
+        padding: 10px 20px;
+        color: white;
+        border: none;
+        cursor: pointer;
+
+        &--primary{
+            background-color: blue;
+        }
+
+        &--secondary{
+            background-color: green;
+        }
+    }
+}
