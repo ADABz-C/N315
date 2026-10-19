@@ -1,10 +1,10 @@
 import "../scss/styles.scss";
-import { pages } from "./pages/pages";
-import { logout } from "./auth";
-import { showToast } from "./components/toast";
-import { clearFormFeedback } from "./utils/formFeedback";
-import { handleLoginSubmit } from "./pages/login";
-import { handleSignupSubmit } from "./pages/signup";
+import { pages } from "../pages/pages.js";
+import { logout } from "./auth.js";
+import { showToast } from "../components/toast.js";
+import { clearFormFeedback } from "../utils/formFeedback.js";
+import { handleLoginSubmit } from "../pages/login.js";
+import { handleSignupSubmit } from "../pages/signup.js";
 const app = document.getElementById("app");
 
 function getRoute() {
@@ -67,3 +67,4 @@ app.addEventListener("input", (event) => {
 });
 
 render();
+
