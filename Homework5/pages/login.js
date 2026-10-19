@@ -1,6 +1,6 @@
 import { renderNav } from "../components/nav.js";
 import { renderFooter } from "../components/footer.js";
-import { login as authenticate } from "../auth.js";
+import { login as authenticate } from "../src/auth.js";
 import { isBlank, isValidEmail } from "../utils/validators.js";
 import {
   showFormFeedback,

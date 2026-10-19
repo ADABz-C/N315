@@ -1,6 +1,6 @@
 import {
     isLoggedIn
-} from "../auth.js";
+} from "../src/auth.js";
 
 const NAV_LINKS = [{
         route: "shop",
