@@ -1,0 +1,20 @@
+{
+  "name": "homework5",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "serve": "live-server",
+    "watch:sass": "sass --watch scss/styles.scss:css/styles.css",
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "sass": "^1.105.2",
+    "vite": "^8.3.4"
+  }
+}
