@@ -1,0 +1,21 @@
+.siteNav {
+    background: var(--dark);
+    height: 56px;
+    padding: 0 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.brand { display: flex; align-items: center; gap: 10px; color: white; }
+.brandIcon { width: 28px; height: 28px; border-radius: 6px; background: var(--orange); }
+.brandText { display: flex; flex-direction: column; line-height: 1.1; }
+.brandText strong { font-family: 'Archivo', sans-serif; font-weight: 900; font-size: 11px; letter-spacing: 1px; }
+.brandText small { font-size: 7px; letter-spacing: 1.5px; color: var(--muted); }
+
+.navLinks { display: flex; gap: 32px; }
+.navLinks a { color: white; font-size: 11px; }
+.navLinks a.active { color: var(--orange); }
+
+.navRight { display: flex; align-items: center; gap: 16px; color: white; font-size: 12px; }
+.navRight .login { color: var(--orange); font-size: 11px; }
