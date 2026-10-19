@@ -4,7 +4,7 @@ A front-end website project for a fictional outdoor outfitter. The site includes
 
 ## Run the project
 
-Open the `Homework5` folder in VS Code and launch `index.html` with the **Live Server** extension. Serving the site locally is recommended because the project uses JavaScript modules.
+Open the `Homework5` folder in VS Code. I used vite so i run it with "npm run dev"
 
 ## Project structure
 
@@ -18,4 +18,4 @@ Open the `Homework5` folder in VS Code and launch `index.html` with the **Live S
 
 ## Notes
 
-Some links and form actions use `#` placeholders and may not navigate or submit data yet. Update them when the corresponding pages or functionality are ready.
+Cyber duck url: http://in-info-web4.luddy.indianapolis.iu.edu/home/students/cadabany/public_html/Homework5/index.html

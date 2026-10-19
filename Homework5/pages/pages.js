@@ -1,9 +1,9 @@
-import { about } from "./about";
-import { shop } from "./shop";
-import { adventureGuides } from "./adventure";
-import { contact } from "./contact";
-import { login } from "./login";
-import { signup } from "./signup";
+import { about } from "./about.js";
+import { shop } from "./shop.js";
+import { adventureGuides } from "./adventure.js";
+import { contact } from "./contact.js";
+import { login } from "./login.js";
+import { signup } from "./signup.js";
 
 export const pages = {
   shop,

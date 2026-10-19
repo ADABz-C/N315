@@ -31,73 +31,184 @@ main {
   max-width: 1720px;
 }
 
-.siteNav {
-  background: var(--dark);
-  height: 56px;
-  padding: 0 80px;
+.nav {
+  position: relative;
+  background: var(--black);
+  height: fit-content;
+  padding: 16px 24px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-direction: row;
 }
-
-.brand {
+.nav .title-section {
   display: flex;
   align-items: center;
   gap: 10px;
-  color: white;
 }
-
-.brandIcon {
-  width: 28px;
-  height: 28px;
-  border-radius: 6px;
-  background: var(--orange);
-}
-
-.brandText {
+.nav .title-section .logo {
+  height: 32px;
+  width: 32px;
+  background-color: var(--orange);
+  border-radius: 8px;
   display: flex;
-  flex-direction: column;
-  line-height: 1.1;
+  justify-content: center;
+  align-items: center;
 }
-
-.brandText strong {
-  font-family: "Archivo", sans-serif;
-  font-weight: 900;
-  font-size: 11px;
-  letter-spacing: 1px;
-}
-
-.brandText small {
-  font-size: 7px;
-  letter-spacing: 1.5px;
-  color: var(--muted);
-}
-
-.navLinks {
-  display: flex;
-  gap: 32px;
-}
-
-.navLinks a {
-  color: white;
-  font-size: 11px;
-}
-
-.navLinks a.active {
-  color: var(--orange);
-}
-
-.navRight {
+.nav .title-section .content {
+  height: 100%;
   display: flex;
   align-items: center;
-  gap: 16px;
-  color: white;
-  font-size: 12px;
+  flex-direction: column;
 }
-
-.navRight .login {
+.nav .title-section .content .Main {
+  font-size: 14px;
+  font-weight: 900;
+  line-height: 20px;
+  letter-spacing: 1.68px;
+  color: #fff;
+}
+.nav .title-section .content .subtitle {
+  font-size: 9px;
+  line-height: 9px;
+  letter-spacing: 2.25px;
+  color: rgba(255, 255, 255, 0.4);
+}
+.nav .nav-links {
+  display: none;
+  align-items: center;
+  gap: 32px;
+}
+.nav .nav-links .nav-link {
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  white-space: nowrap;
+}
+.nav .nav-links .nav-link:hover, .nav .nav-links .nav-link.active {
   color: var(--orange);
-  font-size: 11px;
+}
+.nav .mobile-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 16px 24px 20px;
+  background: var(--black);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  z-index: 20;
+}
+.nav .mobile-menu[hidden] {
+  display: none;
+}
+.nav .mobile-menu .nav-link {
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 10px 0;
+}
+.nav .mobile-menu .nav-link:hover, .nav .mobile-menu .nav-link.active {
+  color: var(--orange);
+}
+.nav .nav-actions {
+  display: flex;
+  height: 40px;
+  align-items: center;
+  gap: 16px;
+}
+.nav .nav-actions .login {
+  color: var(--orange);
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 100%;
+  padding: 0 9px;
+  text-decoration: none;
+  cursor: pointer;
+}
+.nav .nav-actions .search-trigger {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  padding: 0;
+  color: rgba(255, 255, 255, 0.7);
+  cursor: pointer;
+}
+.nav .nav-actions .search-trigger svg {
+  width: 18px;
+  height: 18px;
+}
+.nav .nav-actions .search-trigger:hover {
+  color: var(--orange);
+}
+.nav .nav-actions .icons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.nav .nav-actions .icons .menu-icon {
+  width: 20px;
+  height: 20px;
+}
+.nav .nav-actions .icons .nav-btn {
+  display: flex;
+  align-items: center;
+  background: transparent;
+  border: none;
+  outline: none;
+  padding: 0;
+  cursor: pointer;
+}
+.nav .nav-actions .icons .cart-icon-and-indicator {
+  position: relative;
+  width: 24px;
+  height: 26px;
+}
+.nav .nav-actions .icons .cart-icon-and-indicator .cart-icon {
+  position: absolute;
+  width: 17px;
+  height: 17px;
+  top: 7px;
+}
+.nav .nav-actions .icons .cart-icon-and-indicator .cart-indicator {
+  position: absolute;
+  top: 1px;
+  left: 7px;
+  width: 16px;
+  height: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--orange);
+  border-radius: 100%;
+}
+.nav .nav-actions .icons .cart-icon-and-indicator .cart-indicator p {
+  color: white;
+  font-size: 10px;
+  font-weight: 900;
+}
+@media (min-width: 1024px) {
+  .nav {
+    padding: 16px 48px;
+  }
+  .nav .nav-links {
+    display: flex;
+  }
+  .nav .nav-actions .search-trigger {
+    display: flex;
+  }
+  .nav .nav-actions .icons {
+    display: none;
+  }
+  .nav .mobile-menu {
+    display: none !important;
+  }
 }
 
 * {

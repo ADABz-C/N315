@@ -1,5 +1,8 @@
-export default /*html*/ `
-<main>
+import { renderNav } from "../components/nav.js";
+import { renderFooter } from "../components/footer.js";
+
+export const adventureGuides = () => `<div id="adventure-guides" class="home">
+    ${renderNav()}
     <!-- ag ==== Adventure Guide -->
     <div class="agHeroHolder">
         <p>EXPERT KNOWLEDGE</p>
@@ -28,7 +31,7 @@ export default /*html*/ `
     <div class="agSection3">
         <div class="cardGrid">
             <article class="cards">
-                <div class="cardImg" style="background-image:url(images/ag/guide-1.jpg)"><span class="tag">Camping</span></div>
+                <div class="cardImg" style="background-image:url(images/ag/ag1.jpg)"><span class="tag">Camping</span></div>
                 <div class="cardBody">
                     <div class="meta"><span>Dana Holbrook</span><span>8 min read</span></div>
                     <h3>Beginner Camping Checklist</h3>
@@ -38,7 +41,7 @@ export default /*html*/ `
             </article>
 
             <article class="cards">
-                <div class="cardImg" style="background-image:url(images/ag/guide-2.jpg)"><span class="tag">Hiking</span></div>
+                <div class="cardImg" style="background-image:url(images/ag/ag2.jpg)"><span class="tag">Hiking</span></div>
                 <div class="cardBody">
                     <div class="meta"><span>Leila Ramos</span><span>12 min read</span></div>
                     <h3>Best Indiana Hiking Trails</h3>
@@ -48,7 +51,7 @@ export default /*html*/ `
             </article>
 
             <article class="cards">
-                <div class="cardImg" style="background-image:url(images/ag/guide-3.jpg)"><span class="tag">Gear Guide</span></div>
+                <div class="cardImg" style="background-image:url(images/ag/ag3.jpg)"><span class="tag">Gear Guide</span></div>
                 <div class="cardBody">
                     <div class="meta"><span>Marcus Okonkwo</span><span>10 min read</span></div>
                     <h3>Choosing the Right Backpack</h3>
@@ -58,7 +61,7 @@ export default /*html*/ `
             </article>
 
             <article class="cards">
-                <div class="cardImg" style="background-image:url(images/ag/guide-4.jpg)"><span class="tag">Camping</span></div>
+                <div class="cardImg" style="background-image:url(images/ag/ag4.jpg)"><span class="tag">Camping</span></div>
                 <div class="cardBody">
                     <div class="meta"><span>Jonah Steele</span><span>6 min read</span></div>
                     <h3>Campfire Cooking Basics</h3>
@@ -68,7 +71,7 @@ export default /*html*/ `
             </article>
 
             <article class="cards">
-                <div class="cardImg" style="background-image:url(images/ag/guide-5.jpg)"><span class="tag">Kayaking</span></div>
+                <div class="cardImg" style="background-image:url(images/ag/ag5.jpg)"><span class="tag">Kayaking</span></div>
                 <div class="cardBody">
                     <div class="meta"><span>Leila Ramos</span><span>7 min read</span></div>
                     <h3>Kayaking Safety Tips</h3>
@@ -78,7 +81,7 @@ export default /*html*/ `
             </article>
 
             <article class="cards">
-                <div class="cardImg" style="background-image:url(images/ag/guide-6.jpg)"><span class="tag">Ethics</span></div>
+                <div class="cardImg" style="background-image:url(images/ag/ag6.jpg)"><span class="tag">Ethics</span></div>
                 <div class="cardBody">
                     <div class="meta"><span>Dana Holbrook</span><span>8 min read</span></div>
                     <h3>Leave No Trace Principles</h3>
@@ -105,5 +108,5 @@ export default /*html*/ `
             </div>
         </div>
     </div>
-</main>
+    ${renderFooter()}
 `
