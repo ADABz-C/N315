@@ -1,0 +1,11 @@
+header{
+    width: 100%;
+    min-height: 80px;
+    position:sticky;
+    top:0;
+    z-index: 1000;
+    background-color: grey;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
