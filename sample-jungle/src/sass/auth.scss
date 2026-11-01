@@ -1,0 +1,187 @@
+// Shared styles for the Login and Sign Up pages.
+// Everything is nested under .auth-page so nothing leaks into the
+// home page, the header or the footer.
+
+$auth-yellow: #FFD972;
+$auth-ink: #000;
+
+.auth-page {
+  // Same approach as .home: sit behind the sticky header / fixed footer
+  // and fill the viewport, but allow the page to grow on short screens.
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100vh;
+  min-height: 100dvh;
+  // top clears the 80px sticky header, bottom clears the fixed footer
+  padding: 100px 24px 80px;
+  background-color: $auth-yellow;
+  color: $auth-ink;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+
+  .auth-card {
+    width: 100%;
+    // --auth-width is set per page (login.scss / signup.scss)
+    max-width: var(--auth-width, 250px);
+  }
+
+  // "don't have an account?" (Lato italic 12px)
+  .auth-eyebrow {
+    margin: 0 0 4px;
+    font-family: "Lato", sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.1em;
+  }
+
+  // "Login Here!" / "Sign Up!" (Inter 30px)
+  .auth-title {
+    margin: 0 0 62px;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+    letter-spacing: 0.1em;
+    color: $auth-ink;
+  }
+
+  .auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .auth-field {
+    display: flex;
+    flex-direction: column;
+
+    label {
+      margin-bottom: 4px;
+      font-family: "Lato", sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 14px;
+      letter-spacing: 0.1em;
+    }
+
+    // Underline-style inputs: the 3px black lines from the Figma file
+    input {
+      width: 100%;
+      height: 36px;
+      padding: 0;
+      border: 0;
+      border-bottom: 3px solid $auth-ink;
+      border-radius: 0;
+      background: transparent;
+      color: $auth-ink;
+      font-family: "Lato", sans-serif;
+      font-size: 16px; // 16px stops iOS from zooming on focus
+      letter-spacing: 0.1em;
+      appearance: none;
+      -webkit-appearance: none;
+
+      // offset 0 keeps the ring inside the 4px gap under the label
+      &:focus-visible {
+        outline: 3px solid $auth-ink;
+        outline-offset: 0;
+      }
+
+      // keep browser autofill from painting its own blue/white background
+      &:-webkit-autofill {
+        -webkit-text-fill-color: $auth-ink;
+        -webkit-box-shadow: 0 0 0 1000px $auth-yellow inset;
+      }
+    }
+  }
+
+  // Pill button: same yellow as the page, raised by its drop shadow
+  .auth-submit {
+    width: 100%;
+    height: 52px;
+    margin-top: 33px;
+    border: 0;
+    border-radius: 26px;
+    background-color: $auth-yellow;
+    color: $auth-ink;
+    font-family: "Caveat", cursive;
+    font-size: 25px;
+    line-height: 32px;
+    letter-spacing: 0.1em;
+    box-shadow: 0px 10px 3px rgba(0, 0, 0, 0.160784);
+    cursor: pointer;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+
+    &:hover {
+      transform: translateY(2px);
+      box-shadow: 0px 8px 3px rgba(0, 0, 0, 0.2);
+    }
+
+    &:active {
+      transform: translateY(6px);
+      box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.16);
+    }
+
+    &:focus-visible {
+      outline: 3px solid $auth-ink;
+      outline-offset: 4px;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      transition: none;
+
+      &:hover,
+      &:active {
+        transform: none;
+      }
+    }
+  }
+
+  // link to the other auth page
+  .auth-switch {
+    margin: 28px 0 0;
+    font-family: "Lato", sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.1em;
+
+    a {
+      display: inline-block;
+      padding: 4px 0;
+      color: $auth-ink;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+
+      &:hover {
+        text-decoration-thickness: 2px;
+      }
+
+      &:focus-visible {
+        outline: 3px solid $auth-ink;
+        outline-offset: 2px;
+      }
+    }
+  }
+
+  // Phones: use the width that is there, tighten the vertical rhythm
+  @media (max-width: 600px) {
+    padding: 96px 20px 88px;
+
+    .auth-card {
+      max-width: 320px;
+    }
+
+    .auth-title {
+      margin-bottom: 40px;
+    }
+  }
+}
