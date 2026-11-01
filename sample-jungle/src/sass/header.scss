@@ -4,8 +4,32 @@ header{
     position:sticky;
     top:0;
     z-index: 1000;
-    background-color: grey;
+    // background-color: grey;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
+}
+
+.logo{
+
+    margin-left: 70px;
+
+}
+
+nav{
+    margin-right: 70px;
+}
+
+nav a{
+    margin-right: 40px;
+}
+
+button{
+    font-size: 20px;
+    width: 100px;
+    height: 35px;
+    border-radius: 20px;
+    background-color: #FFD972;
+    border: none;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
 }

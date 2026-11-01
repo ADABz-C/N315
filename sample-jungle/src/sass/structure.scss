@@ -6,6 +6,21 @@
 html, body {
  height: 100%
 }
-h1, h2, h3, h4, h5, h6, p {
- margin-bottom: 16px
+
+header{
+    font-family: 'Caveat', cursive;
+}
+
+button{
+    font-family: 'Caveat', cursive;
+}
+
+
+h1, h2, h3, h4, h5, h6, p{
+ margin-bottom: 16px;
+ font-family: 'Caveat', cursive;
+}
+
+footer{ 
+    font-family: "Lato", sans-serif;
 }

@@ -11,7 +11,7 @@ function changeRoute(){
 
 
 function initApp(){
-  loadPage("home");
+  // loadPage("home");
   window.addEventListener("hashchange", changeRoute);
 }
 

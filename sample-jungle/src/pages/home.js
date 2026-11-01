@@ -1,8 +1,22 @@
 export default function Home() {
     return /*html*/ `
-<div class="home"></div>
-<h1>Welcome to the Home Page</h1>
-<p>This is the content of the home page.</p>
+
+<div class="home">
+    <div class="round-circles">
+        <div class="small-circle">
+            <p>Want to be a Jungle Cook? Go ahead and the kitchen is yours!</p>
+        </div>
+        <div class="large-circle">
+            <h1>The Jungle Cook</h1>
+            <p>The home to various
+                recipes of your choice.
+                Add your own recipe
+                today and fill the world
+                with joy!
+            </p>
+        </div>
+    </div>
 </div>
+
 `;
 }

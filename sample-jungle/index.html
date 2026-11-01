@@ -3,23 +3,62 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <!-- Font Preconnect -->
+     <!-- Caveat -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+     <!-- --------------- -->
+      <!-- Lato -->
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <!-- ------------------- -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>sample-jungle</title>
   </head>
   <body>
     <header>
+
+
+
+      <div class="logo">
+        The Jungle Cook
+      </div>
+
+
+
       <nav>
-        <a href="#home">HOME</a>
-        <a href="#about">ABOUT</a>
-        <a href="#careers">CAREERS</a>
-        <a href="#contact">CONTACT</a>
+        <a href="#home">Home</a>
+        <a href="#browse">Browse</a>
+        <a href="#create-recipe">Create Recipe</a>
+
+        <button>Login</button>
+        <!-- <a href="#contact">Contact</a> -->
       </nav>
+
+
     </header>
-    <div id="app"></div>
+
+
+    <div id="app">
+
+    </div>
+
+
     <footer>
-      <div class="copyright">&copy; 2026 Chidi</div>
-      <div class="footer-nav">Here is the nav</div>
-      <div class="social">social</div>
+      <div class="copyright"> Copyright &copy; 2026 The Jungle Cook</div>
+      <div class="footer-nav">
+        <nav>
+          <a href="#login">Login</a>
+          <a href="#recipe-by-category">Recipes by Category</a>
+          <a href="#privacy-and-copyright">Privacy and Copyright</a>
+          <a href="#create-recipe">Create Recipe</a>
+          <a href="#your-recipe">Your Recipe</a>
+        </nav>
+      </div>
+      <div class="social"> <img src="src/assets/facebook.png" alt="FB logo"> <img src="src/assets/instagram-logo.png" alt="IG logo"></div>
     </footer>
     <script type="module" src="/src/main.js"></script>
   </body>
