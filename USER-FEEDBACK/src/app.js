@@ -1,9 +1,9 @@
 import {
     loadPages
-} from "/src/model.js";
+} from "./model.js";
 import {
     showToast
-} from "/src/utility.js";
+} from "./utility.js";
 let isLoggedIn = false;
 
 function changeRoute() {

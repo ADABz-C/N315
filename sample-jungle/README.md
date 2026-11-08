@@ -1,7 +1,7 @@
 # The Jungle Cook
 
 
-## Web 4: https://in-info-web4.luddy.indianapolis.iu.edu/~cadabany/n315homework6/
+## Web 4: https://in-info-web4.luddy.indianapolis.iu.edu/~cadabany/homework7/dist/
 
 The Jungle Cook is a recipe website built as a class project. It uses a playful visual style with warm colors, custom fonts, and responsive login and sign-up pages.
 

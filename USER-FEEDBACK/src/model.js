@@ -1,5 +1,5 @@
-import home from "/pages/home.js";
-import about from "/pages/about.js";
+import home from "../pages/home.js";
+import about from "../pages/about.js";
 
 export function loadPages(pageID){
     let pageContent = "";

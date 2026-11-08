@@ -1,5 +1,3 @@
-
-
 .toast {
   position: fixed;
   left: 50%;
@@ -24,6 +22,11 @@
   &.toast--visible {
     opacity: 1;
     transform: translate(-50%, 0);
+  }
+
+  // errors use the pink from the logo
+  &.toast--error {
+    background-color: #EFA7A7;
   }
 
   @media (prefers-reduced-motion: reduce) {

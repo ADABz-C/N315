@@ -5,7 +5,7 @@ export default function Signup() {
         <p class="auth-eyebrow">don’t have an account?</p>
         <h1 class="auth-title" id="signup-title">Sign Up!</h1>
 
-        <form class="auth-form" aria-labelledby="signup-title" data-success="You’re signed up! Welcome to The Jungle Cook.">
+        <form class="auth-form" aria-labelledby="signup-title" data-action="signup">
             <div class="auth-field">
                 <label for="signup-first-name">First Name</label>
                 <input id="signup-first-name" name="firstName" type="text" autocomplete="given-name" autocapitalize="words" required>

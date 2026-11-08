@@ -4,7 +4,7 @@ export default function Login() {
     <div class="auth-card">
         <h1 class="auth-title" id="login-title">Login Here!</h1>
 
-        <form class="auth-form" aria-labelledby="login-title">
+        <form class="auth-form" aria-labelledby="login-title" data-action="login">
             <div class="auth-field">
                 <label for="login-email">Email Address</label>
                 <input id="login-email" name="email" type="email" autocomplete="email" autocapitalize="none" spellcheck="false" required>
